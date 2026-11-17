@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Bolos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Loja de Bolos</h1>
+    <div class="main-layout">
+        <div class="loja-seccao">
+            <div class="produtos-container">
+                <div class="produto-card">
+                    <img src="https://acdn-us.mitiendanube.com/stores/005/376/084/products/bolo-de-chantily-e-frutas-vermelhas4-b2e233431eba3b41d617803447645984-1024-1024.webp" alt="Bolo de Chantilly">  
+                    <div class="produto-info">
+                        <h3>Bolo Clássico</h3>
+                        <span>R$ 168,00</span>
+                    </div>
+                    <button onclick="adicionarAoCarrinho('Bolo Clássico', 168.00)">adicionar</button>
+                </div>
+
+                <div class="produto-card">
+                    <img src="https://acdn-us.mitiendanube.com/stores/005/376/084/products/tradicional-cenoura-zero-4f143bbdf546ec3c2717733358590725-1024-1024.webp" alt="Bolo de Cenoura">  
+                    <div class="produto-info">
+                        <h3>Bolo Cenoura</h3>
+                        <span>R$ 86,00</span>
+                    </div>
+                    <button onclick="adicionarAoCarrinho('Bolo Cenoura', 86.00)">adicionar</button>
+                </div>
+
+                <div class="produto-card">
+                    <img src="https://acdn-us.mitiendanube.com/stores/005/376/084/products/bolo-red-velvet4-3a171db39b5a1611e317440410076995-1024-1024.webp" alt="Bolo Red Velvet">  
+                    <div class="produto-info">
+                        <h3>Red Velvet</h3>
+                        <span>R$ 169,00</span>
+                    </div>
+                    <button onclick="adicionarAoCarrinho('Red Velvet', 169.00)">adicionar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="carrinho-container">
+            <div>
+                <h2>Carrinho (<span id="total-itens">0</span>)</h2>
+                <div class="carrinho-cabecalho">
+                    <span>item</span>
+                    <span>preço</span>
+                </div>
+                <ul id="lista-carrinho">
+                    <li class="vazio">O carrinho está vazio.</li>
+                </ul>
+            </div>
+            
+            <div class="total-seccao">
+                <h3>Total: <span id="valor-total">R$ 0,00</span></h3>
+                <button class="btn-limpar" onclick="limparCarrinho()">esvaziar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
